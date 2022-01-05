@@ -4,8 +4,67 @@
 }
 
 * {
-  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  display: grid;
+  place-items: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  background: var(--body-bg-color);
+  color: var(--purple);
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  max-width: 250px;
+  margin-left: auto; /*espaços laterais */
+  margin-right: auto;
+  text-align: center;
+}
+
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+  position: relative;
+}
+
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+  clip-path: circle(50% at 50% 50%);
+}
+
+#pages {
+  color: var(--purple);
+  margin-top: 4rem;
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-auto-flow: row;
+  grid-row-gap: 2rem;
+}
+
+.pagesLink {
+  border: 0.2rem solid;
+  padding: 0.4rem;
+  font-size: 1rem;
+}
+
+#socialMediaLinks {
+  margin-top: 5rem;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
 }
